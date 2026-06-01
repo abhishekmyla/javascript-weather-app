@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Weather App</h1>
+
+      <!-- Search bar -->
+      <div class="search-box">
+        <input type="text" id="city-input" placeholder="Enter a city name..." />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <!-- Error message (hidden by default) -->
+      <p class="error" id="error-msg">City not found. Please try again.</p>
+
+      <!-- Weather card (hidden by default) -->
+      <div class="weather-card" id="weather-card">
+        <h2 class="city-name" id="city-name">London</h2>
+        <p class="country" id="country">GB</p>
+        <img class="weather-icon" id="weather-icon" src="" alt="weather icon" />
+        <p class="temperature" id="temperature">20°C</p>
+        <p class="description" id="description">Clear sky</p>
+
+        <div class="details">
+          <div class="detail">
+            <span class="detail-label">Humidity</span>
+            <span class="detail-value" id="humidity">60%</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Wind Speed</span>
+            <span class="detail-value" id="wind-speed">5 m/s</span>
+          </div>
+          <div class="detail">
+            <span class="detail-label">Feels Like</span>
+            <span class="detail-value" id="feels-like">18°C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
